@@ -1,0 +1,272 @@
+<style type="text/css">
+
+	.receipt-container{
+		width: 21cm;
+	    min-height: 29.7cm;
+	    padding: 2cm;
+	    margin: 1cm auto;
+	    border: 1px #D3D3D3 solid;
+	    border-radius: 5px;
+	    background: white;
+	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	    position: relative;
+	    border-width: 5px;
+	    border-color: rgb(7, 37, 83);
+	}
+
+
+	.receipt-rectangle{
+		width: 19%;
+		height: 5%;
+		background-color: white;
+		border-color: rgb(7, 37, 83);
+		border-width: 4px;
+		border-style: solid;
+		position: absolute;
+		right: 70px;
+		margin-top: 30px;
+	}
+
+	.logo{
+		width: 19%;
+		height: 5%;
+		background-color: white;
+		position: absolute;
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+
+	.receipt-text{
+		font-family: "Arial Black", Gadget, sans-serif;
+		font-size: 40px;
+		margin: auto;
+		text-align: center;
+		color: rgb(7, 37, 83);
+	}
+
+	.whatsapp{
+		background-color: white;
+		position: absolute;
+		top: 200px;
+		margin-left: 37px;
+	}
+
+	.facebook{
+		background-color: white;
+		position: absolute;
+		top: 230px;
+		margin-left: 37px;
+		width: 19%;
+	}
+
+	.address{
+		width: 19%;
+		height: 5%;
+		background-color: white;
+		position: absolute;
+		margin-left: 30px;
+		top: 180px;
+		right: 70px;
+		text-align: right;
+	}
+
+	.student_information{
+		width: 50%;
+		height: 10%;
+		background-color: white;
+		position: absolute;
+		top: 300px;
+		display: inline-block;
+		padding-left: 40px;
+	}
+
+	.payment-table{
+		width: 50%;
+		height: 10%;
+		background-color: white;
+		position: absolute;
+    	top: 50%;
+    	left: 50%;    	
+    	width: 700px;
+    	height: 300px;
+    	transform: translate(-50%, -40%);
+	}
+
+	input {
+	  outline: 0;
+	  border-width: 0 0 2px;
+	  border-color: black;
+	}
+
+	input:focus {
+	  border-color: green
+	}
+
+	img{
+		max-width: 100%;
+    	max-height: 100%;
+	}
+
+	th{
+		background-color: rgb(7, 37, 83);
+		color: white;
+	}
+
+	.input_table{
+		width: 100%;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	div{
+		background-color: transparent !important;
+	}
+
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pusat Tuisyen Wijaya</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="receipt-container">
+		<div class="logo">
+			<img src="C:\Users\shafi\Desktop\Capture3.PNG">
+		</div>
+		<div class="receipt-rectangle">
+			<p class="receipt-text">Receipt</p>
+		</div>
+		<div class="whatsapp">
+			<i class="fa fa-whatsapp" style="font-size:24px; color:green; margin:1px;"></i> 
+			01119950594
+		</div>
+		<div class="facebook">
+			<i class="fa fa-facebook" style="font-size:24px; color:blue; margin-right: 10px;"></i> 
+			Pusat Tuisyen Wijaya
+		</div>
+		<div class="address">
+			<p>No 26-1, Jalan Belian 1, Taman Salak Perdana, Bandar Baru Salak Tinggi, 43900 Sepang, Selangor.</p>
+		</div>
+		<div class="student_information">
+			<form>
+				<h2>Student Information</h2>
+				<label for="Name">Name</label>
+				<input type="" name="Name" id="Name" size="50" style="margin-left: 10px"><br><br>
+				<label for="Email">Email</label>
+				<input type="" name="Email" id="Email" size="50" style="margin-left: 10px"><br><br>
+				<label for="Name">ID</label>
+				<input type="" name="ID" id="ID" style="margin-left: 30px;">
+			</form>
+			
+		</div>
+		<div class="payment-table">
+			<table style="width:100%">
+			  <tr>
+			    <th>PAYMENT METHOD</th>
+			    <th>TRANSACTION ID</th> 
+			    <th>DATE</th>
+			  </tr>
+			  <tr>
+			    <td><input class="input_table" type="" name="" placeholder="CASH/ONLINE"></td>
+			    <td><input class="input_table" type="" name="" ></td>
+			    <td><input type="DATE" name="" style="width: 100%; margin-top: 7px;"></td>
+			  </tr>
+			</table>
+
+			<table style="width:100%; margin-top: 30px; text-align: center;" >
+			  <tr>
+			    <th>NO</th>
+			    <th>SUBJECT</th>
+			    <th>SELECTED</th> 
+			    <th>AMOUNT (RM)</th>
+			  </tr>
+			  <tr>
+			    <td>1</td>
+			    <td style="text-align: right;">Asas Sains Komputer</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></ins></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td>2</td>
+			    <td style="text-align: right;">Bahasa Inggeris</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></ins></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td>3</td>
+			    <td style="text-align: right;">Bahasa Melayu</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></ins></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td>4</td>
+			    <td style="text-align: right;">Matematik</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></ins></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td>5</td>
+			    <td style="text-align: right;">Matematik Tambahan</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></ins></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+			    <td style="text-align: right;">Sains</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></ins></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+			    <td style="text-align: right;">Sains Komputer</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></ins></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td>8</td>
+			    <td style="text-align: right;">Kimia</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td>9</td>
+			    <td style="text-align: right;">Biologi</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td>10</td>
+			    <td style="text-align: right;">Fizik</td>
+			    <td style="transform: scale(1.5);"><input type="checkbox" name=""></td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			    <td></td>
+			    <td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			    <td style="text-align: right;">Subtotal</td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			    <td style="text-align: right;">Total After Discount</td>
+			    <td><input type="" name="" style="border-width: 1px !important; text-align: center !important;"></td>
+			  </tr>
+			</table>
+		</div>
+
+
+	</div>
+	
+</body>
+</html>
